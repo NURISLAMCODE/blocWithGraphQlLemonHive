@@ -15,13 +15,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(create: (context)=>UserBloc(),
       child:  MaterialApp(
+        debugShowCheckedModeBanner: false,
+        color: Colors.red,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: AllCastScreen(),
-      //  home: const SplashScreen(),
+        //home: AllCastScreen(),
+        home:  SplashScreen(),
       ),);
   }
 }
