@@ -42,12 +42,18 @@ class DashboardTextImageContainer  {
         color: containerColor,
         borderRadius: BorderRadius.circular(containerBorderRadius),
         boxShadow: [
+          // BoxShadow(
+          //   color: boxShadowColor,
+          //   offset: boxShadowoffset,
+          //   blurRadius: boxShadowblurRadius,
+          //   spreadRadius: boxShadowspreadRadius,
+          // ),
           BoxShadow(
-            color: boxShadowColor,
-            offset: boxShadowoffset,
-            blurRadius: boxShadowblurRadius,
-            spreadRadius: boxShadowspreadRadius,
-          ),
+            spreadRadius: 0,
+            blurRadius: 31,
+            offset: Offset(0, -10),
+            color: Color.fromRGBO(0, 0, 0, 0.13),
+          )
         ],
       ),
       child: Column(
